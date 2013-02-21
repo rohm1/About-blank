@@ -1,0 +1,200 @@
+/**
+ * General
+ */
+body  {
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	padding: 0;
+	margin: 0 auto;
+	width: 900px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+
+}
+
+a {
+    color: #5b7ba2;
+	display: block;
+    text-decoration: none;
+}
+
+ul {
+	padding-left: 0px;
+	margin-top: 0px;
+	list-style-type: none;
+}
+
+li {
+	border-bottom: 1px dotted #aaa;
+}
+
+li:hover {
+	background: #eee;
+}
+
+*:not(a) {
+	cursor: default;
+}
+
+/**
+ * Bookmarks
+ */
+#bookmarks {
+	padding-top: 30px;
+	padding-right: 100px;
+	width: 50%;
+	margin: auto;
+	vertical-align: top;
+}
+
+#bookmarks a, #bookmarks span {
+	display: block;
+	white-space: nowrap;
+	max-width: 200px;
+	overflow: hidden;
+}
+
+#bookmarks ul {
+	position: absolute;
+}
+
+#bookmarks > ul {
+	margin-left: 50px;
+}
+
+#bookmarks li {
+	padding-left: 10px;
+	padding-right: 15px;
+	clear: both;
+	max-width: 200px;
+}
+
+#bookmarks ul ul {
+	display: none;
+	background: #fafafa;
+	-moz-box-shadow: 1px 2px 5px 2px #aaa;
+	box-shadow: 1px 2px 5px 2px #aaa;
+}
+
+#bookmarks li:hover > ul {
+	display: block;
+}
+
+/**
+ * Favs
+ */
+#favs {
+	padding-top: 30px;
+	padding-left: 30px;
+	border-left: 1px dotted #aaa;
+	vertical-align: top;
+	text-align: right;
+}
+
+#favs ul {
+	float: right;
+	margin-right: 50px;
+}
+
+#favs li {
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+#favs li a {
+	white-space: nowrap;
+	width: 380px;
+	overflow: hidden;
+}
+
+/**
+ * Edit links
+ */
+#editDiv {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+#editDiv a {
+	display: inline;
+}
+
+#saveEdit {
+	display: none;
+}
+
+/**
+ * Edit bar
+ */
+.tools {
+	position: relative;
+	display: none;
+	background: #fff;
+}
+
+.tools :not(.clearer) {
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+}
+
+.edit {
+	background: url(imgs/edit.png) no-repeat;
+}
+
+.move {
+	background: url(imgs/move.png) no-repeat;
+}
+
+.delete {
+	background: url(imgs/delete.png) no-repeat;
+}
+
+.clearer {
+	clear: both;
+}
+
+/**
+ * Drag/drop
+ */
+.target {
+	border: 1px dotted #999;
+	background: #fff;
+	width: 100%;
+}
+
+.dragged {
+	opacity: 0.5;
+}
+
+.overlay {
+	background: #eee;
+}
+
+.anchor {
+	cursor: move;
+}
+
+/* Don't edit or overwrite this settings */
+.dragged {
+	z-index: 1000;
+	position: absolute;
+}
+
+/**
+ * Add/edit fav window
+ */
+#add-site {
+	background: #fff;
+}

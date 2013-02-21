@@ -1,0 +1,6 @@
+content   aboutblank                 chrome/content/
+skin      aboutblank   classic       chrome/skin/
+locale    aboutblank   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://aboutblank/content/ff-overlay.xul

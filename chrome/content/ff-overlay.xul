@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://aboutblank/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://aboutblank/locale/overlay.dtd">
+<overlay id="aboutblank-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://aboutblank/content/overlay.js"/>
+  <script src="chrome://aboutblank/content/ab_favs.js"/>
+  <script src="chrome://aboutblank/content/ab_infos.js"/>
+  <script src="chrome://aboutblank/content/ab_utils.js"/>
+  <script src="chrome://aboutblank/content/ab_strings.js"/>
+  
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-aboutblank" label="&aboutblankContext.label;"
+              insertafter="context-stop"
+              oncommand="aboutblank.onMenuItemCommand(event)"/>
+  </popup>
+  
+  <script>
+	<![CDATA[
+	
+	  var AB_InitStructure = {
+		init: function() {
+			aboutblank.init();
+		},
+		
+	  }
+	  
+	  addEventListener("load", AB_InitStructure.init, false);
+
+	]]>
+  </script>
+
+</overlay>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="chrome://aboutblank/skin/overlay.css" type="text/css"?>
+
+<dialog id="add-site" title="Add a site to favorites"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        ondialogaccept="return end();">
+	
+	<grid>
+		<columns>
+			<column flex="1"/>
+			<column flex="2"/>
+		</columns>
+		<rows>
+			<row>
+				<label value="Page title"/>
+				<textbox id="page-title" />
+			</row>
+			<row>
+				<label value="Page URL"/>
+				<textbox id="page-url" />
+			</row>
+		</rows>
+	</grid>
+
+<script>
+var params = window.arguments[0];
+document.getElementById('page-title').value = params.in.title;
+document.getElementById('page-url').value = params.in.url;
+
+function end() {
+	params.out = {title: params.in.title, url: params.in.url};
+	params.out.title = document.getElementById('page-title').value;
+	params.out.url = document.getElementById('page-url').value;
+	params.state = true;
+	return true;
+}
+
+</script>
+
+<description value="Veuillez sélectionner un bouton"/>
+
+</dialog>

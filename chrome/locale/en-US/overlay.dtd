@@ -1,0 +1,7 @@
+<!ENTITY aboutblank.label "Your localized menuitem">
+<!ENTITY aboutblankContext.label "About:Blank - add to favs">
+<!ENTITY aboutblankToolbarButton.label "Your Toolbar Button">
+<!ENTITY aboutblankToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY aboutblankSidebar.label "Your Sidebar">
+<!ENTITY aboutblankToolbar.name  "example">
+<!ENTITY aboutblankToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &aboutblankToolbar.name;">

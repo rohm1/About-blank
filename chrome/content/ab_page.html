@@ -1,0 +1,36 @@
+<script src="chrome://aboutblank/content/ab_core.js"></script>
+<script src="chrome://aboutblank/content/ab_favs.js"></script>
+<script src="chrome://aboutblank/content/ab_infos.js"></script>
+<script src="chrome://aboutblank/content/ab_utils.js"></script>
+<script src="chrome://aboutblank/content/ab_strings.js"></script>
+
+<script src="chrome://aboutblank/content/jquery.js"></script>
+<script src="chrome://aboutblank/content/drag_drop_sort.js"></script>
+<script src="chrome://aboutblank/content/ab_display.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" charset="UTF-8" href="chrome://aboutblank/skin/overlay.css" />
+
+<div id="container">
+	<table>
+		<tr>
+			<td id="bookmarks">
+
+			</td>
+			<td id="favs">
+				<div id="editDiv">
+					<span id="saveEdit">
+						<a href="javascript:ab_saveEdit()" id="saveLink"></a> |
+					</span>
+					<a href="javascript:ab_edit()" id="editLink"></a>
+				</div>
+
+			</td>
+		</tr>
+	</table>
+</div>
+
+<script>
+new ab_core();
+$('#saveLink').html(ab_strings.get('SAVE'));
+$('#editLink').html(ab_strings.get('EDIT'));
+</script>
